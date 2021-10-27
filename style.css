@@ -2,4 +2,22 @@
       padding:0;
       margin:0;  
     }
-    
+    .grid-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 15vh 50vh 10vh;
+    }
+    nav{
+        border:black solid 2px;
+        grid-column-start: 1/2;
+        grid-column-end: 2/2;
+    }
+    main{
+        border:blue solid 2px;
+        grid-column: 1/2;
+        display: flex;
+    }
+    footer{
+        border:brown solid 2px;
+        grid-column: 1/2;
+    }
