@@ -1,23 +1,92 @@
     *{
       padding:0;
       margin:0;  
+      font-family:"fonte_principal"
+    }
+    body{
+        background-color:rgb(68, 63, 63);
+
     }
     .grid-container{
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 15vh 50vh 10vh;
+        grid-template-rows: 15vh 65vh 15vh;
+        grid-gap: 10px;
+        
     }
     nav{
-        border:black solid 2px;
-        grid-column-start: 1/2;
-        grid-column-end: 2/2;
+        margin:5px;
+        grid-column: 1/4;
+        display:flex;
+        justify-content: space-evenly;
+        align-items: center;
+        background-color: black;
+        border-radius:10px
+    }
+    nav a{
+        background-color:rgb(77, 75, 75);
+        color: white;
+        text-decoration:none;
+        padding:10px;
+        border-radius:10px;
+    }
+
+    nav a:hover{
+        background-color: white;
+        color:black;
     }
     main{
-        border:blue solid 2px;
-        grid-column: 1/2;
+        grid-column: 1/4;
         display: flex;
+        justify-content: center;
+        margin:5px;
+        align-items: center;
+        background-color: black;
+        border-radius:10px;
     }
+    .form1{
+        display: flex;
+        flex-direction: column;
+        height: 65%;
+        align-items: center;
+        background-color: rgb(53, 47, 47);
+        padding:10px;
+        border-radius: 10px;
+    }
+    .form1 input{
+        margin-top:5px;
+        margin-bottom:5px;
+        background-color: white;
+        padding: 5px;
+        border-radius: 10px;
+    }
+    .form1 button{
+        background: rgb(59, 59, 59);
+        padding:4px;
+        color: white;
+        border-radius:10px;
+        margin-top:5px;
+    }
+    .form1 label{
+        background-color: white;
+        padding:5px;
+        border-radius: 10px;
+    }
+    
     footer{
-        border:brown solid 2px;
-        grid-column: 1/2;
+        grid-column: 1/4;
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        background-color: black;
+        margin:5px;
+        border-radius:10px;
+    }
+    footer h2{
+        color: white;
+    }
+
+    @font-face {
+        font-family:'fonte_principal';
+        src: url(./_fonts/Oswald-VariableFont_wght.ttf);
     }
