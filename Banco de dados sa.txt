@@ -1,0 +1,22 @@
+Banco de dados 1 
+database: sa_back_end
+tabela: usuario
+tabela: cpf
+Campos usuario:
+id
+email
+senha 
+nome
+campos tabela cpf
+
+id
+nome
+cep
+rua
+numero
+bairro
+cidade
+uf
+telefone
+sexo
+CREATE TABLE `sa_back_end`.`cpf` ( `id` INT NOT NULL AUTO_INCREMENT , `cep` INT NOT NULL , `rua` VARCHAR(45) NOT NULL , `numero` INT NOT NULL , `bairro` VARCHAR(45) NOT NULL , `cidade` VARCHAR(45) NOT NULL , `uf` VARCHAR(2) NOT NULL , `telefone` INT NOT NULL , `sexo` VARCHAR(20) NOT NULL , PRIMARY KEY (`id`)) ENGINE = InnoDB;
